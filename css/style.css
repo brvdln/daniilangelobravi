@@ -110,7 +110,10 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 #pc-country { background: #111; color: var(--text); border: 1px solid rgba(255,255,255,0.2); padding: 7px; font-size: 10px; font-family: var(--font); width: 100%; }
 .pc-total { font-size: 16px; font-weight: 200; letter-spacing: 0.05em; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 14px; margin-top: 4px; }
 .pc-cta { display: block; text-align: center; margin-top: 4px; padding: 12px 20px; font-size: 9px; width: 100%; }
+.pc-cta.is-disabled { opacity: 0.35; pointer-events: none; cursor: not-allowed; }
 .pc-note { margin-top: 10px; font-size: 9px; line-height: 1.5; color: var(--text-dim); text-align: center; }
+.pc-terms { display: flex; align-items: flex-start; gap: 8px; margin: 16px 0; font-size: 10px; line-height: 1.6; color: var(--text-dim); cursor: pointer; }
+.pc-terms input { margin-top: 2px; flex-shrink: 0; }
 @media (max-width: 768px) {
   .price-calculator { left: 12px; right: 12px; bottom: 12px; width: auto; }
 }

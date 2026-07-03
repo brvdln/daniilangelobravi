@@ -93,7 +93,17 @@
   const pcCountry = document.getElementById('pc-country');
   const pcTotalPrice = calc ? calc.querySelector('.pc-total-price') : null;
   const pcCta = document.getElementById('pc-cta');
+  const pcTermsCheck = document.getElementById('pc-terms-check');
   let currentBasePrice = 0;
+
+  function updateCtaState() {
+    if (!pcCta) return;
+    const accepted = pcTermsCheck && pcTermsCheck.checked;
+    pcCta.classList.toggle('is-disabled', !accepted);
+    pcCta.setAttribute('aria-disabled', accepted ? 'false' : 'true');
+  }
+
+  if (pcTermsCheck) pcTermsCheck.addEventListener('change', updateCtaState);
 
   function formatEur(n) {
     return '€' + n.toLocaleString('it-IT');
@@ -126,7 +136,9 @@
         if (pcBasePrice) pcBasePrice.textContent = formatEur(price);
         if (pcFrameCheck) pcFrameCheck.checked = false;
         if (pcCountry) pcCountry.selectedIndex = 0;
+        if (pcTermsCheck) pcTermsCheck.checked = false;
         updateTotal();
+        updateCtaState();
         if (pcCta && item.dataset.stripeLink) pcCta.href = item.dataset.stripeLink;
         calc.classList.add('visible');
       } else {
