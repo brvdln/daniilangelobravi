@@ -1,0 +1,136 @@
+/* ============================================
+   DANIIL ANGELO BRAVI — Portfolio
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #000;
+  --text: #fff;
+  --text-dim: rgba(255,255,255,0.45);
+  --nav-h: 60px;
+  --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --gap: 6px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+nav.scrolled { background: rgba(0,0,0,0.92); }
+
+.nav-logo {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.nav-links { display: flex; gap: 32px; list-style: none; }
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active { color: var(--text); }
+
+.hero { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+.hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+
+.hero-title {
+  position: absolute;
+  bottom: 48px; left: 40px;
+  font-size: clamp(24px, 4vw, 52px);
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+}
+
+.hero-title span { display: block; }
+
+.page-header { padding: calc(var(--nav-h) + 48px) 40px 32px; }
+.page-header h1 { font-size: 11px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-dim); }
+
+.gallery { padding: 0 var(--gap) var(--gap); columns: 3; column-gap: var(--gap); }
+.gallery-item { break-inside: avoid; margin-bottom: var(--gap); position: relative; overflow: hidden; cursor: pointer; display: block; }
+.gallery-item img { width: 100%; display: block; transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94); }
+.gallery-item:hover img { transform: scale(1.03); }
+.gallery-item .caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 48px 16px 16px; background: linear-gradient(transparent, rgba(0,0,0,0.75)); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0; transition: opacity 0.3s; }
+.gallery-item:hover .caption { opacity: 1; }
+
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 999; align-items: center; justify-content: center; cursor: zoom-out; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; cursor: default; }
+.lightbox-close { position: fixed; top: 24px; right: 32px; font-size: 24px; cursor: pointer; color: var(--text-dim); background: none; border: none; transition: color 0.2s; }
+.lightbox-close:hover { color: var(--text); }
+.lightbox-caption { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
+
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: var(--gap); padding: 0 var(--gap) var(--gap); }
+.video-wrap { position: relative; padding-bottom: 56.25%; background: #111; }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+
+.contact-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--nav-h) 40px 80px; }
+.contact-inner { max-width: 520px; width: 100%; }
+.contact-inner h2 { font-size: 11px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 40px; }
+.form-group { margin-bottom: 24px; }
+.form-group label { display: block; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px; }
+.form-group input, .form-group textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px 0; color: var(--text); font-family: var(--font); font-size: 13px; letter-spacing: 0.06em; outline: none; transition: border-color 0.2s; resize: none; }
+.form-group input:focus, .form-group textarea:focus { border-color: rgba(255,255,255,0.7); }
+.form-group textarea { min-height: 120px; }
+.btn-send { margin-top: 32px; background: none; border: 1px solid rgba(255,255,255,0.3); color: var(--text); font-family: var(--font); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 40px; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+.btn-send:hover { border-color: var(--text); background: rgba(255,255,255,0.05); }
+
+footer { padding: 40px 40px 32px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.08); }
+.footer-copy { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); }
+.footer-social { display: flex; gap: 20px; }
+.footer-social a { color: var(--text-dim); text-decoration: none; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.2s; }
+.footer-social a:hover { color: var(--text); }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1px; background: var(--text); transition: transform 0.3s, opacity 0.3s; }
+
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .hamburger { display: flex; }
+  .nav-links { display: none; position: fixed; inset: 0; background: var(--bg); flex-direction: column; align-items: center; justify-content: center; gap: 40px; z-index: 99; }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 14px; }
+  .gallery { columns: 2; }
+  .hero-title { font-size: 28px; left: 20px; bottom: 32px; }
+  .page-header { padding: calc(var(--nav-h) + 24px) 20px 24px; }
+  .video-grid { grid-template-columns: 1fr; padding: 0 20px 20px; }
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 20px; }
+}
+
+@media (max-width: 480px) {
+  .gallery { columns: 1; }
+}
