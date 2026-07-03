@@ -2,6 +2,19 @@
    DANIIL ANGELO BRAVI — main.js
    ============================================ */
 
+(function initHeroSlideshow() {
+  const hero = document.getElementById('hero-slideshow');
+  if (!hero) return;
+  const imgs = hero.querySelectorAll('img');
+  if (imgs.length < 2) return;
+  let i = 0;
+  setInterval(() => {
+    imgs[i].classList.remove('is-active');
+    i = (i + 1) % imgs.length;
+    imgs[i].classList.add('is-active');
+  }, 5000);
+})();
+
 (function initNav() {
   const nav = document.querySelector('nav');
   if (!nav) return;
