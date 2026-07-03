@@ -92,6 +92,7 @@
   const pcFrameCheck = document.getElementById('pc-frame-check');
   const pcCountry = document.getElementById('pc-country');
   const pcTotalPrice = calc ? calc.querySelector('.pc-total-price') : null;
+  const pcCta = document.getElementById('pc-cta');
   let currentBasePrice = 0;
 
   function formatEur(n) {
@@ -126,6 +127,7 @@
         if (pcFrameCheck) pcFrameCheck.checked = false;
         if (pcCountry) pcCountry.selectedIndex = 0;
         updateTotal();
+        if (pcCta && item.dataset.stripeLink) pcCta.href = item.dataset.stripeLink;
         calc.classList.add('visible');
       } else {
         calc.classList.remove('visible');
