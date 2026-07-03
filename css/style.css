@@ -99,6 +99,20 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 .lightbox-caption { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
 .lightbox-nav { position: fixed; top: 50%; transform: translateY(-50%); font-size: 28px; cursor: pointer; color: var(--text-dim); background: none; border: none; padding: 16px; transition: color 0.2s; }
 .lightbox-nav:hover { color: var(--text); }
+.price-calculator { display: none; position: fixed; bottom: 24px; right: 24px; width: 280px; background: rgba(10,10,10,0.94); border: 1px solid rgba(255,255,255,0.15); padding: 20px; font-size: 12px; color: var(--text); cursor: default; }
+.price-calculator.visible { display: block; }
+.pc-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 14px; }
+.pc-row label { font-size: 11px; letter-spacing: 0.05em; }
+.pc-frame { cursor: pointer; }
+.pc-frame input { margin-right: 8px; }
+.pc-shipping { margin-bottom: 14px; }
+.pc-shipping label { display: block; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+#pc-country { background: #111; color: var(--text); border: 1px solid rgba(255,255,255,0.2); padding: 7px; font-size: 10px; font-family: var(--font); width: 100%; }
+.pc-total { font-size: 16px; font-weight: 200; letter-spacing: 0.05em; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 14px; margin-top: 4px; }
+.pc-cta { display: block; text-align: center; margin-top: 4px; padding: 12px 20px; font-size: 9px; width: 100%; }
+@media (max-width: 768px) {
+  .price-calculator { left: 12px; right: 12px; bottom: 12px; width: auto; }
+}
 .lightbox-prev { left: 8px; }
 .lightbox-next { right: 8px; }
 @media (max-width: 768px) {

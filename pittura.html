@@ -30,51 +30,51 @@
 
 <section class="gallery" id="gallery-pittura">
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1050">
     <img src="images/pittura/inferno-soffice.jpeg" alt="Inferno soffice" loading="lazy">
-    <div class="price-badge">€1.050</div>
+    <div class="price-badge">In vendita — €1.050</div>
     <div class="caption">Inferno soffice — Olio su tela — 27×19,4 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1025">
     <img src="images/pittura/giardino-sintetico.jpeg" alt="Giardino sintetico" loading="lazy">
-    <div class="price-badge">€1.025</div>
+    <div class="price-badge">In vendita — €1.025</div>
     <div class="caption">Giardino sintetico — Olio su tela — 27×19 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1050">
     <img src="images/pittura/giuditta.jpg" alt="Giuditta" loading="lazy">
-    <div class="price-badge">€1.050</div>
+    <div class="price-badge">In vendita — €1.050</div>
     <div class="caption">Giuditta — Olio su tela — 27×19,4 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1050">
     <img src="images/pittura/sopra-il-respiro-del-mostro.jpeg" alt="Sopra il respiro del mostro" loading="lazy">
-    <div class="price-badge">€1.050</div>
+    <div class="price-badge">In vendita — €1.050</div>
     <div class="caption">Sopra il respiro del mostro — Olio su tela — 27×19,4 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1050">
     <img src="images/pittura/rosso-sangue-bianco-silenzio.jpeg" alt="Rosso sangue, bianco silenzio" loading="lazy">
-    <div class="price-badge">€1.050</div>
+    <div class="price-badge">In vendita — €1.050</div>
     <div class="caption">Rosso sangue, bianco silenzio — Olio su tela — 27×19,4 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1025">
     <img src="images/pittura/liturgia-rossa.png" alt="Liturgia rossa" loading="lazy">
-    <div class="price-badge">€1.025</div>
+    <div class="price-badge">In vendita — €1.025</div>
     <div class="caption">Liturgia rossa — Olio su tela — 27×19 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1050">
     <img src="images/pittura/voltage-dream.jpeg" alt="Voltage Dream" loading="lazy">
-    <div class="price-badge">€1.050</div>
+    <div class="price-badge">In vendita — €1.050</div>
     <div class="caption">Voltage Dream — Olio su tela — 27×19,4 cm — 2025</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1025">
     <img src="images/pittura/dolcezza-armata.jpeg" alt="Dolcezza armata" loading="lazy">
-    <div class="price-badge">€1.025</div>
+    <div class="price-badge">In vendita — €1.025</div>
     <div class="caption">Dolcezza armata — Olio su tela — 27×19 cm — 2025</div>
   </div>
 
@@ -90,9 +90,9 @@
     <div class="caption">20BRV020 — Olio su tela — 2020</div>
   </div>
 
-  <div class="gallery-item">
+  <div class="gallery-item" data-price="1025">
     <img src="images/pittura/sole-morente.jpg" alt="Sole morente" loading="lazy">
-    <div class="price-badge">€1.025</div>
+    <div class="price-badge">In vendita — €1.025</div>
     <div class="caption">Sole morente — Olio su tela — 27×19 cm — 2025</div>
   </div>
 
@@ -104,6 +104,22 @@
   <img src="" alt="">
   <button type="button" class="lightbox-nav lightbox-next" aria-label="Successivo">&#x203a;</button>
   <p class="lightbox-caption"></p>
+  <div id="price-calculator" class="price-calculator">
+    <div class="pc-row"><span>Opera</span><span class="pc-base-price"></span></div>
+    <label class="pc-row pc-frame"><span><input type="checkbox" id="pc-frame-check"> Cornice artigianale</span><span>+ €180</span></label>
+    <div class="pc-shipping">
+      <label for="pc-country">Spedizione</label>
+      <select id="pc-country">
+        <option value="12">Italia — €12</option>
+        <option value="25">Unione Europea — €25</option>
+        <option value="35">UK / Svizzera / Norvegia — €35</option>
+        <option value="55">USA / Canada — €55</option>
+        <option value="70">Giappone / Asia / resto del mondo — €70</option>
+      </select>
+    </div>
+    <div class="pc-row pc-total"><span>Totale</span><span class="pc-total-price"></span></div>
+    <a href="contact.html" class="btn-send pc-cta">Richiedi l'acquisto</a>
+  </div>
 </div>
 
 <footer>

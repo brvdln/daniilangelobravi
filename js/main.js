@@ -86,6 +86,28 @@
   const items = Array.from(document.querySelectorAll('.gallery-item'));
   let index = -1;
 
+  const FRAME_PRICE = 180;
+  const calc = document.getElementById('price-calculator');
+  const pcBasePrice = calc ? calc.querySelector('.pc-base-price') : null;
+  const pcFrameCheck = document.getElementById('pc-frame-check');
+  const pcCountry = document.getElementById('pc-country');
+  const pcTotalPrice = calc ? calc.querySelector('.pc-total-price') : null;
+  let currentBasePrice = 0;
+
+  function formatEur(n) {
+    return '€' + n.toLocaleString('it-IT');
+  }
+
+  function updateTotal() {
+    if (!pcTotalPrice) return;
+    const frame = pcFrameCheck && pcFrameCheck.checked ? FRAME_PRICE : 0;
+    const shipping = pcCountry ? parseInt(pcCountry.value, 10) : 0;
+    pcTotalPrice.textContent = formatEur(currentBasePrice + frame + shipping);
+  }
+
+  if (pcFrameCheck) pcFrameCheck.addEventListener('change', updateTotal);
+  if (pcCountry) pcCountry.addEventListener('change', updateTotal);
+
   function show(i) {
     if (!items.length) return;
     index = (i + items.length) % items.length;
@@ -95,6 +117,20 @@
     lbImg.src = img.src;
     lbImg.alt = img.alt || '';
     if (lbCap) lbCap.textContent = cap ? cap.textContent : '';
+
+    if (calc) {
+      const price = parseInt(item.dataset.price || '', 10);
+      if (!isNaN(price)) {
+        currentBasePrice = price;
+        if (pcBasePrice) pcBasePrice.textContent = formatEur(price);
+        if (pcFrameCheck) pcFrameCheck.checked = false;
+        if (pcCountry) pcCountry.selectedIndex = 0;
+        updateTotal();
+        calc.classList.add('visible');
+      } else {
+        calc.classList.remove('visible');
+      }
+    }
   }
 
   function open(i) {
@@ -107,6 +143,7 @@
     lb.classList.remove('open');
     lbImg.src = '';
     document.body.style.overflow = '';
+    if (calc) calc.classList.remove('visible');
   }
 
   items.forEach((item, i) => {
