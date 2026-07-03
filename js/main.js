@@ -25,16 +25,40 @@
   }
 })();
 
+(function initGalleryFadeIn() {
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    if (img.complete) {
+      img.classList.add('is-loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('is-loaded'));
+    }
+  });
+})();
+
 (function initLightbox() {
   const lb = document.getElementById('lightbox');
   if (!lb) return;
   const lbImg = lb.querySelector('img');
   const lbCap = lb.querySelector('.lightbox-caption');
   const lbClose = lb.querySelector('.lightbox-close');
+  const lbPrev = lb.querySelector('.lightbox-prev');
+  const lbNext = lb.querySelector('.lightbox-next');
+  const items = Array.from(document.querySelectorAll('.gallery-item'));
+  let index = -1;
 
-  function open(src, caption) {
-    lbImg.src = src;
-    if (lbCap) lbCap.textContent = caption || '';
+  function show(i) {
+    if (!items.length) return;
+    index = (i + items.length) % items.length;
+    const item = items[index];
+    const img = item.querySelector('img');
+    const cap = item.querySelector('.caption');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt || '';
+    if (lbCap) lbCap.textContent = cap ? cap.textContent : '';
+  }
+
+  function open(i) {
+    show(i);
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -45,17 +69,21 @@
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const img = item.querySelector('img');
-      const cap = item.querySelector('.caption');
-      open(img.src, cap ? cap.textContent : '');
-    });
+  items.forEach((item, i) => {
+    item.addEventListener('click', () => open(i));
   });
 
   lb.addEventListener('click', e => { if (e.target === lb) close(); });
   if (lbClose) lbClose.addEventListener('click', close);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  if (lbPrev) lbPrev.addEventListener('click', () => show(index - 1));
+  if (lbNext) lbNext.addEventListener('click', () => show(index + 1));
+
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
 })();
 
 (function setActiveNav() {
