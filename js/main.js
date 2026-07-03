@@ -38,6 +38,33 @@
   }
 })();
 
+(function initVideoLightbox() {
+  const lb = document.getElementById('video-lightbox');
+  if (!lb) return;
+  const iframe = document.getElementById('video-lightbox-iframe');
+  const lbClose = lb.querySelector('.lightbox-close');
+
+  function open(videoId) {
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    iframe.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.video-wrap[data-video-id]').forEach(wrap => {
+    wrap.addEventListener('click', () => open(wrap.dataset.videoId));
+  });
+
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  if (lbClose) lbClose.addEventListener('click', close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && lb.classList.contains('open')) close(); });
+})();
+
 (function initGalleryFadeIn() {
   document.querySelectorAll('.gallery-item img').forEach(img => {
     if (img.complete) {

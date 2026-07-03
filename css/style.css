@@ -106,8 +106,14 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 }
 
 .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: var(--gap); padding: 0 var(--gap) var(--gap); }
-.video-wrap { position: relative; padding-bottom: 56.25%; background: #111; }
-.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+.video-wrap { position: relative; padding-bottom: 56.25%; background: #111; cursor: pointer; overflow: hidden; }
+.video-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94); }
+.video-wrap:hover img { transform: scale(1.03); }
+.video-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 64px; height: 64px; border-radius: 50%; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.4); color: var(--text); font-size: 20px; display: flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s; pointer-events: none; }
+.video-wrap:hover .video-play { background: rgba(0,0,0,0.75); border-color: var(--text); }
+
+.video-lightbox-frame { width: min(90vw, 160vh); aspect-ratio: 16/9; }
+.video-lightbox-frame iframe { width: 100%; height: 100%; border: none; display: block; }
 
 .contact-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--nav-h) 40px 80px; }
 .contact-inner { max-width: 520px; width: 100%; }

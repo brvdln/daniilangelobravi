@@ -28,30 +28,31 @@
   <h1>3D</h1>
 </div>
 
-<section class="video-grid">
+<section class="video-grid" id="video-grid">
 
-  <div class="video-wrap">
-    <iframe src="https://www.youtube-nocookie.com/embed/DjbkZc5Z1nU"
-            title="3D — Daniil Angelo Bravi"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+  <div class="video-wrap" data-video-id="DjbkZc5Z1nU">
+    <img src="https://img.youtube.com/vi/DjbkZc5Z1nU/hqdefault.jpg" alt="3D — Daniil Angelo Bravi" loading="lazy">
+    <div class="video-play">&#9658;</div>
   </div>
 
-  <div class="video-wrap">
-    <iframe src="https://www.youtube-nocookie.com/embed/es-VywEZ5Ww"
-            title="3D — Daniil Angelo Bravi"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+  <div class="video-wrap" data-video-id="es-VywEZ5Ww">
+    <img src="https://img.youtube.com/vi/es-VywEZ5Ww/hqdefault.jpg" alt="3D — Daniil Angelo Bravi" loading="lazy">
+    <div class="video-play">&#9658;</div>
   </div>
 
-  <div class="video-wrap">
-    <iframe src="https://www.youtube-nocookie.com/embed/GtoSggx0g28"
-            title="3D — Daniil Angelo Bravi"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+  <div class="video-wrap" data-video-id="GtoSggx0g28">
+    <img src="https://img.youtube.com/vi/GtoSggx0g28/hqdefault.jpg" alt="3D — Daniil Angelo Bravi" loading="lazy">
+    <div class="video-play">&#9658;</div>
   </div>
 
 </section>
+
+<div id="video-lightbox" class="lightbox">
+  <button type="button" class="lightbox-close" aria-label="Chiudi">&#x2715;</button>
+  <div class="video-lightbox-frame">
+    <iframe id="video-lightbox-iframe" src="" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 
 <footer>
   <p class="footer-copy">&copy; Daniil Angelo Bravi 2025 &nbsp;&middot;&nbsp; <a href="cookie-policy.html" style="color:inherit;text-decoration:none">Cookie Policy</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;text-decoration:none">Privacy Policy</a></p>
