@@ -106,7 +106,8 @@
   if (pcTermsCheck) pcTermsCheck.addEventListener('change', updateCtaState);
 
   function formatEur(n) {
-    return '€' + n.toLocaleString('it-IT');
+    const locale = document.documentElement.lang === 'en' ? 'en-US' : 'it-IT';
+    return '€' + n.toLocaleString(locale);
   }
 
   function updateTotal() {
