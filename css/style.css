@@ -68,6 +68,7 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 .hero-title {
   position: absolute;
   bottom: 48px; left: 40px;
+  margin: 0;
   font-size: clamp(24px, 4vw, 52px);
   font-weight: 200;
   letter-spacing: 0.2em;
