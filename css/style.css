@@ -61,8 +61,13 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
 
-.nav-lang a { border: 1px solid rgba(255,255,255,0.25); padding: 4px 9px; }
-.nav-lang a:hover { border-color: rgba(255,255,255,0.6); }
+.nav-lang { position:relative; }
+.lang-cur { font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.5); cursor:pointer; border:1px solid rgba(255,255,255,.25); padding:4px 9px; user-select:none; display:inline-block; }
+.lang-cur::after { content:" ▾"; font-size:9px; }
+.lang-drop { display:none; position:absolute; right:0; top:calc(100% + 6px); background:rgba(0,0,0,.97); border:1px solid rgba(255,255,255,.15); z-index:200; }
+.lang-drop a { display:block; padding:7px 14px; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.6); text-decoration:none; white-space:nowrap; }
+.lang-drop a:hover { color:#fff; background:rgba(255,255,255,.05); }
+.nav-lang:hover .lang-drop, .nav-lang.open .lang-drop { display:block; }
 
 .hero { position: relative; width: 100%; height: 100vh; overflow: hidden; }
 .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; opacity: 0; transition: opacity 1.8s ease; }
@@ -173,6 +178,9 @@ footer { padding: 40px 40px 32px; display: flex; align-items: center; justify-co
   .nav-links { display: none; position: fixed; inset: 0; background: var(--bg); flex-direction: column; align-items: center; justify-content: center; gap: 40px; z-index: 99; }
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 14px; }
+  .lang-cur { display:none; }
+  .lang-drop { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; position:static; background:none; border:none; }
+  .lang-drop a { padding:4px 9px; border:1px solid rgba(255,255,255,.25); }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .hero-title { font-size: 28px; left: 20px; bottom: 32px; }
   .page-header { padding: calc(var(--nav-h) + 24px) 20px 24px; }
