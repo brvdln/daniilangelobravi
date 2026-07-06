@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Rhinoceros — Daniil Angelo Bravi</title>
+  <meta name="description" content="Cursos profesionales de Rhinoceros 3D impartidos por Daniil Angelo Bravi. Acceso inmediato a los vídeos tras la compra.">
+  <link rel="alternate" hreflang="it" href="https://daniilangelobravi.com/corsi.html">
+  <link rel="alternate" hreflang="en" href="https://daniilangelobravi.com/en/corsi.html">
+  <link rel="alternate" hreflang="es" href="https://daniilangelobravi.com/es/corsi.html">
+  <link rel="alternate" hreflang="ru" href="https://daniilangelobravi.com/ru/corsi.html">
+  <link rel="alternate" hreflang="zh" href="https://daniilangelobravi.com/zh/corsi.html">
+  <link rel="alternate" hreflang="ja" href="https://daniilangelobravi.com/ja/corsi.html">
+  <link rel="canonical" href="https://daniilangelobravi.com/es/corsi.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .corsi-wrap { min-height:100vh; padding:calc(var(--nav-h) + 60px) 40px 80px; max-width:960px; margin:0 auto; }
+    .corsi-intro { margin-bottom:64px; }
+    .corsi-intro h1 { font-size:clamp(22px,3vw,36px); font-weight:200; letter-spacing:0.1em; margin-bottom:20px; }
+    .corsi-intro p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; }
+    .corsi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; }
+    .corso-card { background:#0a0a0a; padding:32px 28px; display:flex; flex-direction:column; gap:16px; border:1px solid rgba(255,255,255,0.06); transition:border-color 0.3s; }
+    .corso-card:hover { border-color:rgba(255,255,255,0.2); }
+    .corso-tag { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-title { font-size:16px; font-weight:300; letter-spacing:0.05em; line-height:1.3; }
+    .corso-desc { font-size:12px; color:var(--text-dim); line-height:1.7; flex:1; }
+    .corso-meta { display:flex; flex-direction:column; gap:6px; }
+    .corso-duration { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-price { font-size:22px; font-weight:200; letter-spacing:0.05em; }
+    .corso-price span { font-size:11px; color:var(--text-dim); letter-spacing:0.1em; }
+    .btn-acquista { display:block; text-align:center; padding:13px 20px; border:1px solid rgba(255,255,255,0.3); color:var(--text); text-decoration:none; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; transition:border-color 0.2s,background 0.2s; margin-top:8px; }
+    .btn-acquista:hover { border-color:var(--text); background:rgba(255,255,255,0.05); }
+    .corsi-note { margin-top:60px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.08); font-size:11px; color:var(--text-dim); line-height:1.8; }
+    .corsi-section { margin-top:80px; }
+    .corsi-section-title { font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px; }
+    .corsi-section > p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; margin-bottom:32px; }
+    .corso-link { display:inline-block; margin-top:8px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:2px; text-decoration:none; transition:border-color 0.2s; }
+    .corso-link:hover { border-color:var(--text); }
+    .cv-columns { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .cv-columns h3 { font-size:10px; font-weight:400; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); margin-bottom:20px; }
+    .cv-item { margin-bottom:22px; }
+    .cv-period { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); margin-bottom:4px; }
+    .cv-role { font-size:13px; font-weight:300; letter-spacing:0.03em; margin-bottom:4px; }
+    .cv-desc { font-size:12px; color:var(--text-dim); line-height:1.6; }
+    @media (max-width:768px) { .corsi-wrap { padding:calc(var(--nav-h) + 32px) 20px 60px; } .cv-columns { grid-template-columns:1fr; gap:32px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">Daniil Angelo Bravi</a>
+  <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="pittura.html">Pintura</a></li>
+    <li><a href="disegno.html">Dibujo</a></li>
+    <li><a href="3d.html">3D</a></li>
+    <li><a href="corsi.html">Cursos</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+    <li class="nav-lang"><span class="lang-cur">ES</span><div class="lang-drop"><a href="../corsi.html">IT</a><a href="../en/corsi.html">EN</a><a href="../ru/corsi.html">RU</a><a href="../zh/corsi.html">ZH</a><a href="../ja/corsi.html">JA</a></div></li>
+  </ul>
+</nav>
+<div class="corsi-wrap">
+  <div class="corsi-intro">
+    <h1>Cursos</h1>
+    <p>Videolecciones privadas grabadas por Daniil Angelo Bravi, diseñador técnico CAD con más de 8 años de experiencia profesional en la industria del calzado y los accesorios — desde el modelado 3D con Rhinoceros hasta el diseño y construcción de moldes, pasando por el control de calidad. Graduado en Diseño Industrial y Ambiental por la Universidad de Camerino. Tras la compra recibirás inmediatamente el enlace de acceso al curso.</p>
+    <p style="margin-top:16px;font-size:11px;letter-spacing:0.05em;color:var(--text-dim)">Software principal: Rhinoceros 8 — ZBrush y Blender incluidos cuando lo requiere el proyecto</p>
+  </div>
+
+  <div class="corsi-section" style="margin-top:0">
+    <p class="corsi-section-title">Clases presenciales</p>
+    <p>Para quienes prefieren aprender en persona: clases individuales presenciales en la provincia de Fermo, Italia, y alrededores. Días, horarios y programa se acuerdan directamente por <a href="contact.html" style="color:inherit">contacto</a>.</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Presencial — Fermo, Italia y alrededores</p>
+        <h2 class="corso-title">Curso Básico</h2>
+        <p class="corso-desc">Clase individual para quienes empiezan desde cero: interfaz, comandos fundamentales, modelado de sólidos y superficies NURBS.</p>
+        <a class="corso-link" href="contact.html">Solicitar información</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Presencial — Fermo, Italia y alrededores</p>
+        <h2 class="corso-title">Curso Avanzado</h2>
+        <p class="corso-desc">Clase individual para quienes ya tienen base en Rhino: modelado avanzado, superficies complejas, flujos de trabajo profesionales.</p>
+        <a class="corso-link" href="contact.html">Solicitar información</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Presencial — bajo petición</p>
+        <h2 class="corso-title">Curso Específico de Calzado</h2>
+        <p class="corso-desc">Clase individual dedicada al calzado femenino (tacones, plataformas, cuñas, suelas y accesorios), programa acordado según tus necesidades.</p>
+        <a class="corso-link" href="contact.html">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">Videocursos</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Rhinoceros para Principiantes</h2>
+        <p class="corso-desc">Empieza desde cero: interfaz, comandos fundamentales, modelado de sólidos y superficies NURBS. Adecuado para quienes nunca han usado Rhino.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Modelado Intermedio/Avanzado</h2>
+        <p class="corso-desc">Técnicas NURBS más allá de lo básico: superficies complejas, edición avanzada, flujos de trabajo profesionales para proyectos reales.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Superficies Avanzadas</h2>
+        <p class="corso-desc">Control avanzado de superficies NURBS, continuidad G0/G1/G2, técnicas para formas orgánicas e industriales complejas.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Calzado</p>
+        <h2 class="corso-title">Tacones</h2>
+        <p class="corso-desc">Modelado de tacones para calzado femenino: proporciones, construcción de formas, técnicas específicas de la industria del calzado.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Calzado</p>
+        <h2 class="corso-title">Plataformas</h2>
+        <p class="corso-desc">Modelado de plataformas para calzado femenino: construcción volumétrica, unión con empeine y suela, técnicas específicas de la industria.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Calzado</p>
+        <h2 class="corso-title">Cuñas</h2>
+        <p class="corso-desc">Modelado de cuñas para calzado femenino: construcción de formas, gestión de superficies curvas, técnicas específicas de la industria.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Calzado</p>
+        <h2 class="corso-title">Suelas y Accesorios</h2>
+        <p class="corso-desc">Modelado de suelas y accesorios para calzado femenino: dibujo de la suela, detalles funcionales y decorativos, técnicas específicas de la industria.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Próximamente</p>
+          <p class="corso-price">— <span>en preparación</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="corsi-note">Tras la compra recibirás por email el enlace directo al curso en YouTube (vídeo privado, accesible solo con tu enlace personal). Para preguntas: <a href="contact.html" style="color:inherit">contáctame</a>.</p>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">Currículum</p>
+    <div class="cv-columns">
+      <div>
+        <h3>Experiencia</h3>
+        <div class="cv-item">
+          <p class="cv-period">2007 — Actualidad</p>
+          <p class="cv-role">Práctica pictórica</p>
+          <p class="cv-desc">Pintura desde los 15 años (nacido en 1992): 19 años de práctica continua de pintura al óleo, entre autoformación y formación artística académica.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Oct 2021 — Actualidad</p>
+          <p class="cv-role">Diseñador técnico y control de calidad — CMT Stampi srl</p>
+          <p class="cv-desc">Diseño y construcción de moldes, modelado para la industria del calzado y los accesorios.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Jul 2017 — Sep 2021</p>
+          <p class="cv-role">Especialista en diseño e impresión 3D — GSB S.r.l.</p>
+          <p class="cv-desc">Diseño y prototipado de calzado con Rhinoceros 3D y ZBrush.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Jul 2017 — Dic 2017</p>
+          <p class="cv-role">Diseñador textil e industrial — Demanumea S.r.l.</p>
+          <p class="cv-desc">Creación de obras artísticas y gráficas para productos manufacturados con Rhinoceros 3D y dibujo técnico.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Abr 2018 — Jun 2018</p>
+          <p class="cv-role">Operador de corte CAD-CAM — 3AND Factory School</p>
+          <p class="cv-desc">Prácticas de corte automatizado (240h), Blender y dibujo técnico.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Formación</h3>
+        <div class="cv-item">
+          <p class="cv-period">2012 — 2017</p>
+          <p class="cv-role">Diseño Industrial y Ambiental — Universidad de Camerino</p>
+          <p class="cv-desc">Escuela de Arquitectura y Diseño, calificación 104/110.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Diploma</p>
+          <p class="cv-role">Máster de Arte en Pintura — Istituto Statale d'Arte "Giulio Cantalamessa", Macerata</p>
+          <p class="cv-desc">Decoración pictórica, calificación 100/100.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer-copy">&copy; Daniil Angelo Bravi 2025 &nbsp;&middot;&nbsp; <a href="cookie-policy.html" style="color:inherit;text-decoration:none">Política de Cookies</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;text-decoration:none">Política de Privacidad</a> &nbsp;&middot;&nbsp; <a href="return-policy.html" style="color:inherit;text-decoration:none">Política de Devoluciones</a></p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/brvdln/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@brvdln/" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://discourse.mcneel.com/u/brvdln/activity/portfolio" target="_blank" rel="noopener">McNeel Forum</a>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script data-goatcounter="https://rabbitbravi.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
