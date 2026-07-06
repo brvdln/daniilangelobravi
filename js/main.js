@@ -187,3 +187,17 @@
     }
   });
 })();
+
+(function initLangDropdown() {
+  document.querySelectorAll('.nav-lang').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      el.classList.toggle('open');
+      e.stopPropagation();
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nav-lang.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+  });
+})();
