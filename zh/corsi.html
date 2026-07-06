@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程 Rhinoceros — Daniil Angelo Bravi</title>
+  <meta name="description" content="Daniil Angelo Bravi 的专业Rhinoceros 3D课程。购买后立即获得视频访问权限。">
+  <link rel="alternate" hreflang="it" href="https://daniilangelobravi.com/corsi.html">
+  <link rel="alternate" hreflang="en" href="https://daniilangelobravi.com/en/corsi.html">
+  <link rel="alternate" hreflang="es" href="https://daniilangelobravi.com/es/corsi.html">
+  <link rel="alternate" hreflang="ru" href="https://daniilangelobravi.com/ru/corsi.html">
+  <link rel="alternate" hreflang="zh" href="https://daniilangelobravi.com/zh/corsi.html">
+  <link rel="alternate" hreflang="ja" href="https://daniilangelobravi.com/ja/corsi.html">
+  <link rel="canonical" href="https://daniilangelobravi.com/zh/corsi.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .corsi-wrap { min-height:100vh; padding:calc(var(--nav-h) + 60px) 40px 80px; max-width:960px; margin:0 auto; }
+    .corsi-intro { margin-bottom:64px; }
+    .corsi-intro h1 { font-size:clamp(22px,3vw,36px); font-weight:200; letter-spacing:0.1em; margin-bottom:20px; }
+    .corsi-intro p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; }
+    .corsi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; }
+    .corso-card { background:#0a0a0a; padding:32px 28px; display:flex; flex-direction:column; gap:16px; border:1px solid rgba(255,255,255,0.06); transition:border-color 0.3s; }
+    .corso-card:hover { border-color:rgba(255,255,255,0.2); }
+    .corso-tag { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-title { font-size:16px; font-weight:300; letter-spacing:0.05em; line-height:1.3; }
+    .corso-desc { font-size:12px; color:var(--text-dim); line-height:1.7; flex:1; }
+    .corso-meta { display:flex; flex-direction:column; gap:6px; }
+    .corso-duration { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-price { font-size:22px; font-weight:200; letter-spacing:0.05em; }
+    .corso-price span { font-size:11px; color:var(--text-dim); letter-spacing:0.1em; }
+    .btn-acquista { display:block; text-align:center; padding:13px 20px; border:1px solid rgba(255,255,255,0.3); color:var(--text); text-decoration:none; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; transition:border-color 0.2s,background 0.2s; margin-top:8px; }
+    .btn-acquista:hover { border-color:var(--text); background:rgba(255,255,255,0.05); }
+    .corsi-note { margin-top:60px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.08); font-size:11px; color:var(--text-dim); line-height:1.8; }
+    .corsi-section { margin-top:80px; }
+    .corsi-section-title { font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px; }
+    .corsi-section > p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; margin-bottom:32px; }
+    .corso-link { display:inline-block; margin-top:8px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:2px; text-decoration:none; transition:border-color 0.2s; }
+    .corso-link:hover { border-color:var(--text); }
+    .cv-columns { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .cv-columns h3 { font-size:10px; font-weight:400; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); margin-bottom:20px; }
+    .cv-item { margin-bottom:22px; }
+    .cv-period { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); margin-bottom:4px; }
+    .cv-role { font-size:13px; font-weight:300; letter-spacing:0.03em; margin-bottom:4px; }
+    .cv-desc { font-size:12px; color:var(--text-dim); line-height:1.6; }
+    @media (max-width:768px) { .corsi-wrap { padding:calc(var(--nav-h) + 32px) 20px 60px; } .cv-columns { grid-template-columns:1fr; gap:32px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">Daniil Angelo Bravi</a>
+  <button class="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="pittura.html">绘画</a></li>
+    <li><a href="disegno.html">素描</a></li>
+    <li><a href="3d.html">3D</a></li>
+    <li><a href="corsi.html">课程</a></li>
+    <li><a href="contact.html">联系</a></li>
+    <li class="nav-lang"><span class="lang-cur">ZH</span><div class="lang-drop"><a href="../corsi.html">IT</a><a href="../en/corsi.html">EN</a><a href="../es/corsi.html">ES</a><a href="../ru/corsi.html">RU</a><a href="../ja/corsi.html">JA</a></div></li>
+  </ul>
+</nav>
+<div class="corsi-wrap">
+  <div class="corsi-intro">
+    <h1>课程</h1>
+    <p>由Daniil Angelo Bravi讲授的私人预录视频课程——一位在鞋类及配饰行业拥有8年以上专业经验的技术CAD设计师:从Rhinoceros三维建模到模具设计制造与质量控制。毕业于卡梅里诺大学工业与环境设计专业。购买后您将立即获得课程访问链接。</p>
+    <p style="margin-top:16px;font-size:11px;letter-spacing:0.05em;color:var(--text-dim)">主要软件:Rhinoceros 8——如有需要包含ZBrush和Blender</p>
+  </div>
+
+  <div class="corsi-section" style="margin-top:0">
+    <p class="corsi-section-title">现场课程</p>
+    <p>适合喜欢面对面学习的学员:在意大利费尔莫省及周边地区提供一对一现场课程。具体日期、时间和课程内容通过<a href="contact.html" style="color:inherit">联系</a>页面直接商定。</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">现场课程 — 费尔莫,意大利及周边地区</p>
+        <h2 class="corso-title">基础课程</h2>
+        <p class="corso-desc">适合初学者的一对一课程:界面操作、基本命令、实体建模与NURBS曲面建模。</p>
+        <a class="corso-link" href="contact.html">咨询信息</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">现场课程 — 费尔莫,意大利及周边地区</p>
+        <h2 class="corso-title">进阶课程</h2>
+        <p class="corso-desc">适合已掌握Rhino基础的学员:高级建模、复杂曲面、专业工作流程。</p>
+        <a class="corso-link" href="contact.html">咨询信息</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">现场课程 — 按需安排</p>
+        <h2 class="corso-title">鞋类课程</h2>
+        <p class="corso-desc">女鞋一对一课程(高跟、厚底、坡跟、鞋底及配饰),课程内容根据您的需求商定。</p>
+        <a class="corso-link" href="contact.html">咨询信息</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">视频课程</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Rhinoceros入门</h2>
+        <p class="corso-desc">从零开始:界面操作、基本命令、实体建模与NURBS曲面建模。适合从未使用过Rhino的学员。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">中级/进阶</h2>
+        <p class="corso-desc">超越基础的NURBS技术:复杂曲面、高级编辑、真实项目的专业工作流程。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">高级曲面</h2>
+        <p class="corso-desc">NURBS曲面高级管理,G0/G1/G2连续性,复杂有机与工业造型技术。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — 鞋类</p>
+        <h2 class="corso-title">鞋跟</h2>
+        <p class="corso-desc">女鞋鞋跟建模:比例、造型构建、行业技术。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — 鞋类</p>
+        <h2 class="corso-title">厚底</h2>
+        <p class="corso-desc">女鞋厚底建模:体量构建、与鞋面及鞋底的连接、行业技术。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — 鞋类</p>
+        <h2 class="corso-title">坡跟</h2>
+        <p class="corso-desc">女鞋坡跟建模:造型构建、复杂曲面处理、行业技术。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — 鞋类</p>
+        <h2 class="corso-title">鞋底及配饰</h2>
+        <p class="corso-desc">女鞋鞋底及配饰建模:防滑纹路、功能性与装饰性细节、行业技术。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">即将推出</p>
+          <p class="corso-price">— <span>准备中</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="corsi-note">购买后,您将通过电子邮件收到YouTube课程的直接链接(私享视频,仅可通过您的专属链接访问)。如有疑问,请<a href="contact.html" style="color:inherit">与我联系</a>。</p>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">简历</p>
+    <div class="cv-columns">
+      <div>
+        <h3>经历</h3>
+        <div class="cv-item">
+          <p class="cv-period">2007 — 至今</p>
+          <p class="cv-role">绘画实践</p>
+          <p class="cv-desc">15岁开始绘画(1992年出生):19年油画持续实践——自学与学院艺术训练相结合。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2021年10月 — 至今</p>
+          <p class="cv-role">技术设计师与质量控制 — CMT Stampi srl</p>
+          <p class="cv-desc">模具设计与制造,鞋类及配饰行业建模。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2017年7月 — 2021年9月</p>
+          <p class="cv-role">3D设计与打印专员 — GSB S.r.l.</p>
+          <p class="cv-desc">使用Rhinoceros 3D和ZBrush进行鞋类设计与原型制作。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2017年7月 — 2017年12月</p>
+          <p class="cv-role">纺织与工业设计师 — Demanumea S.r.l.</p>
+          <p class="cv-desc">使用Rhinoceros 3D和技术制图为量产产品创作艺术与图形作品。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2018年4月 — 2018年6月</p>
+          <p class="cv-role">CAD-CAM裁剪操作员 — 3AND Factory School</p>
+          <p class="cv-desc">240小时自动化裁剪实践,Blender与技术制图。</p>
+        </div>
+      </div>
+      <div>
+        <h3>教育</h3>
+        <div class="cv-item">
+          <p class="cv-period">2012 — 2017</p>
+          <p class="cv-role">工业与环境设计 — 卡梅里诺大学</p>
+          <p class="cv-desc">建筑与设计学院,成绩104/110。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">学位</p>
+          <p class="cv-role">绘画艺术学士 — Istituto Statale d'Arte "Giulio Cantalamessa", Macerata</p>
+          <p class="cv-desc">绘画装饰专业,成绩100/100。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer-copy">&copy; Daniil Angelo Bravi 2025 &nbsp;&middot;&nbsp; <a href="cookie-policy.html" style="color:inherit;text-decoration:none">Cookie政策</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;text-decoration:none">隐私政策</a> &nbsp;&middot;&nbsp; <a href="return-policy.html" style="color:inherit;text-decoration:none">退货政策</a></p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/brvdln/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@brvdln/" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://discourse.mcneel.com/u/brvdln/activity/portfolio" target="_blank" rel="noopener">McNeel Forum</a>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script data-goatcounter="https://rabbitbravi.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

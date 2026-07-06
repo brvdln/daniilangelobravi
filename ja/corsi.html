@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhinocerosコース — Daniil Angelo Bravi</title>
+  <meta name="description" content="Daniil Angelo BraviによるRhinoceros 3Dの専門コース。購入後すぐに動画にアクセスできます。">
+  <link rel="alternate" hreflang="it" href="https://daniilangelobravi.com/corsi.html">
+  <link rel="alternate" hreflang="en" href="https://daniilangelobravi.com/en/corsi.html">
+  <link rel="alternate" hreflang="es" href="https://daniilangelobravi.com/es/corsi.html">
+  <link rel="alternate" hreflang="ru" href="https://daniilangelobravi.com/ru/corsi.html">
+  <link rel="alternate" hreflang="zh" href="https://daniilangelobravi.com/zh/corsi.html">
+  <link rel="alternate" hreflang="ja" href="https://daniilangelobravi.com/ja/corsi.html">
+  <link rel="canonical" href="https://daniilangelobravi.com/ja/corsi.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .corsi-wrap { min-height:100vh; padding:calc(var(--nav-h) + 60px) 40px 80px; max-width:960px; margin:0 auto; }
+    .corsi-intro { margin-bottom:64px; }
+    .corsi-intro h1 { font-size:clamp(22px,3vw,36px); font-weight:200; letter-spacing:0.1em; margin-bottom:20px; }
+    .corsi-intro p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; }
+    .corsi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; }
+    .corso-card { background:#0a0a0a; padding:32px 28px; display:flex; flex-direction:column; gap:16px; border:1px solid rgba(255,255,255,0.06); transition:border-color 0.3s; }
+    .corso-card:hover { border-color:rgba(255,255,255,0.2); }
+    .corso-tag { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-title { font-size:16px; font-weight:300; letter-spacing:0.05em; line-height:1.3; }
+    .corso-desc { font-size:12px; color:var(--text-dim); line-height:1.7; flex:1; }
+    .corso-meta { display:flex; flex-direction:column; gap:6px; }
+    .corso-duration { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-price { font-size:22px; font-weight:200; letter-spacing:0.05em; }
+    .corso-price span { font-size:11px; color:var(--text-dim); letter-spacing:0.1em; }
+    .btn-acquista { display:block; text-align:center; padding:13px 20px; border:1px solid rgba(255,255,255,0.3); color:var(--text); text-decoration:none; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; transition:border-color 0.2s,background 0.2s; margin-top:8px; }
+    .btn-acquista:hover { border-color:var(--text); background:rgba(255,255,255,0.05); }
+    .corsi-note { margin-top:60px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.08); font-size:11px; color:var(--text-dim); line-height:1.8; }
+    .corsi-section { margin-top:80px; }
+    .corsi-section-title { font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px; }
+    .corsi-section > p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; margin-bottom:32px; }
+    .corso-link { display:inline-block; margin-top:8px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:2px; text-decoration:none; transition:border-color 0.2s; }
+    .corso-link:hover { border-color:var(--text); }
+    .cv-columns { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .cv-columns h3 { font-size:10px; font-weight:400; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); margin-bottom:20px; }
+    .cv-item { margin-bottom:22px; }
+    .cv-period { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); margin-bottom:4px; }
+    .cv-role { font-size:13px; font-weight:300; letter-spacing:0.03em; margin-bottom:4px; }
+    .cv-desc { font-size:12px; color:var(--text-dim); line-height:1.6; }
+    @media (max-width:768px) { .corsi-wrap { padding:calc(var(--nav-h) + 32px) 20px 60px; } .cv-columns { grid-template-columns:1fr; gap:32px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">Daniil Angelo Bravi</a>
+  <button class="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="pittura.html">絵画</a></li>
+    <li><a href="disegno.html">デッサン</a></li>
+    <li><a href="3d.html">3D</a></li>
+    <li><a href="corsi.html">コース</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    <li class="nav-lang"><span class="lang-cur">JA</span><div class="lang-drop"><a href="../corsi.html">IT</a><a href="../en/corsi.html">EN</a><a href="../es/corsi.html">ES</a><a href="../ru/corsi.html">RU</a><a href="../zh/corsi.html">ZH</a></div></li>
+  </ul>
+</nav>
+<div class="corsi-wrap">
+  <div class="corsi-intro">
+    <h1>コース</h1>
+    <p>Daniil Angelo Braviによる個人向け録画動画レッスン——靴・アクセサリー業界で8年以上の実務経験を持つ技術CADデザイナーが、Rhinocerosによる3Dモデリングから金型の設計・製造、品質管理までを指導します。カメリーノ大学の工業・環境デザイン学科を卒業。購入後すぐにコースへのアクセスリンクが届きます。</p>
+    <p style="margin-top:16px;font-size:11px;letter-spacing:0.05em;color:var(--text-dim)">主要ソフトウェア:Rhinoceros 8——必要に応じてZBrushとBlenderも対応</p>
+  </div>
+
+  <div class="corsi-section" style="margin-top:0">
+    <p class="corsi-section-title">対面レッスン</p>
+    <p>対面での学習を希望される方向けに、イタリア・フェルモ県およびその周辺地域にて個人指導の対面レッスンを行っています。日程・時間・内容は<a href="contact.html" style="color:inherit">お問い合わせ</a>ページより直接ご相談ください。</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">対面 — イタリア・フェルモおよび周辺地域</p>
+        <h2 class="corso-title">基礎コース</h2>
+        <p class="corso-desc">初心者向けの個人レッスン:インターフェース、基本コマンド、ソリッドおよびNURBSサーフェスのモデリング。</p>
+        <a class="corso-link" href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">対面 — イタリア・フェルモおよび周辺地域</p>
+        <h2 class="corso-title">上級コース</h2>
+        <p class="corso-desc">Rhinoの基礎を習得済みの方向け:高度なモデリング、複雑なサーフェス、プロフェッショナルなワークフロー。</p>
+        <a class="corso-link" href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">対面 — ご要望に応じて</p>
+        <h2 class="corso-title">シューズコース</h2>
+        <p class="corso-desc">レディースシューズ(ヒール、プラットフォーム、ウェッジ、ソール、アクセサリー)の個人レッスン。内容はご要望に応じて調整します。</p>
+        <a class="corso-link" href="contact.html">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">動画コース</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Rhinoceros入門</h2>
+        <p class="corso-desc">ゼロからのスタート:インターフェース、基本コマンド、ソリッドおよびNURBSサーフェスのモデリング。Rhinoを使ったことがない方向け。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">中級/上級</h2>
+        <p class="corso-desc">基礎を超えたNURBSテクニック:複雑なサーフェス、高度な編集、実案件向けのプロフェッショナルなワークフロー。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">高度なサーフェス</h2>
+        <p class="corso-desc">NURBSサーフェスの高度な操作、G0/G1/G2連続性、複雑な有機形状・工業形状のテクニック。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — シューズ</p>
+        <h2 class="corso-title">ヒール</h2>
+        <p class="corso-desc">レディースシューズのヒールモデリング:プロポーション、造形、業界テクニック。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — シューズ</p>
+        <h2 class="corso-title">プラットフォーム</h2>
+        <p class="corso-desc">レディースシューズのプラットフォームモデリング:ボリューム構築、アッパー・ソールとの接続、業界テクニック。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — シューズ</p>
+        <h2 class="corso-title">ウェッジ</h2>
+        <p class="corso-desc">レディースシューズのウェッジモデリング:造形、複雑なサーフェス処理、業界テクニック。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — シューズ</p>
+        <h2 class="corso-title">ソール・アクセサリー</h2>
+        <p class="corso-desc">レディースシューズのソール・アクセサリーモデリング:トレッドパターン、機能的・装飾的ディテール、業界テクニック。</p>
+        <div class="corso-meta">
+          <p class="corso-duration">まもなく</p>
+          <p class="corso-price">— <span>準備中</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="corsi-note">購入後、YouTubeコースへの直接リンクがメールで届きます(専用リンクのみでアクセス可能な限定公開動画)。ご質問は<a href="contact.html" style="color:inherit">お問い合わせ</a>ください。</p>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">経歴</p>
+    <div class="cv-columns">
+      <div>
+        <h3>職歴</h3>
+        <div class="cv-item">
+          <p class="cv-period">2007年 — 現在</p>
+          <p class="cv-role">絵画活動</p>
+          <p class="cv-desc">15歳(1992年生まれ)から絵画を開始:独学とアカデミックな美術教育を組み合わせた19年間の油絵制作。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2021年10月 — 現在</p>
+          <p class="cv-role">技術デザイナー・品質管理 — CMT Stampi srl</p>
+          <p class="cv-desc">金型の設計・製造、靴・アクセサリー業界向けモデリング。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2017年7月 — 2021年9月</p>
+          <p class="cv-role">3Dデザイン・プリント専門家 — GSB S.r.l.</p>
+          <p class="cv-desc">Rhinoceros 3DとZBrushによる靴のデザインとプロトタイピング。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2017年7月 — 2017年12月</p>
+          <p class="cv-role">テキスタイル・工業デザイナー — Demanumea S.r.l.</p>
+          <p class="cv-desc">Rhinoceros 3Dと技術製図を用いた量産製品向けのアート・グラフィック制作。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">2018年4月 — 2018年6月</p>
+          <p class="cv-role">CAD-CAM裁断オペレーター — 3AND Factory School</p>
+          <p class="cv-desc">自動裁断実習240時間、Blenderと技術製図。</p>
+        </div>
+      </div>
+      <div>
+        <h3>学歴</h3>
+        <div class="cv-item">
+          <p class="cv-period">2012年 — 2017年</p>
+          <p class="cv-role">工業・環境デザイン — カメリーノ大学</p>
+          <p class="cv-desc">建築・デザイン学部、成績104/110。</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">学位</p>
+          <p class="cv-role">絵画芸術ディプロマ — Istituto Statale d'Arte "Giulio Cantalamessa", Macerata</p>
+          <p class="cv-desc">絵画装飾専攻、成績100/100。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer-copy">&copy; Daniil Angelo Bravi 2025 &nbsp;&middot;&nbsp; <a href="cookie-policy.html" style="color:inherit;text-decoration:none">Cookieポリシー</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;text-decoration:none">プライバシーポリシー</a> &nbsp;&middot;&nbsp; <a href="return-policy.html" style="color:inherit;text-decoration:none">返品ポリシー</a></p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/brvdln/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@brvdln/" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://discourse.mcneel.com/u/brvdln/activity/portfolio" target="_blank" rel="noopener">McNeel Forum</a>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script data-goatcounter="https://rabbitbravi.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
