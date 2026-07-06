@@ -150,6 +150,11 @@ nav.scrolled { background: rgba(0,0,0,0.92); }
 .btn-send { margin-top: 32px; background: none; border: 1px solid rgba(255,255,255,0.3); color: var(--text); font-family: var(--font); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 40px; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
 .btn-send:hover { border-color: var(--text); background: rgba(255,255,255,0.05); }
 
+.payment-badges-wrap { padding: 32px 40px 0; text-align: center; }
+.payment-badges-label { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 14px; }
+.payment-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.payment-badges span { border: 1px solid rgba(255,255,255,0.25); padding: 5px 12px; font-size: 10px; letter-spacing: 0.05em; color: var(--text-dim); }
+
 footer { padding: 40px 40px 32px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.08); }
 .footer-copy { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); }
 .footer-social { display: flex; gap: 20px; }
