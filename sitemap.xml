@@ -622,4 +622,66 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/privacy-policy.html"/>
   </url>
 
+  <!-- BIO — 6 lingue -->
+  <url>
+    <loc>https://daniilangelobravi.com/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+  <url>
+    <loc>https://daniilangelobravi.com/en/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+  <url>
+    <loc>https://daniilangelobravi.com/es/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+  <url>
+    <loc>https://daniilangelobravi.com/ru/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+  <url>
+    <loc>https://daniilangelobravi.com/zh/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+  <url>
+    <loc>https://daniilangelobravi.com/ja/bio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it"        href="https://daniilangelobravi.com/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://daniilangelobravi.com/en/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://daniilangelobravi.com/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://daniilangelobravi.com/ru/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://daniilangelobravi.com/zh/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://daniilangelobravi.com/ja/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://daniilangelobravi.com/bio.html"/>
+  </url>
+
 </urlset>
