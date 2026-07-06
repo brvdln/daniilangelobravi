@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы Rhinoceros — Daniil Angelo Bravi</title>
+  <meta name="description" content="Профессиональные курсы Rhinoceros 3D от Daniil Angelo Bravi. Мгновенный доступ к видео после покупки.">
+  <link rel="alternate" hreflang="it" href="https://daniilangelobravi.com/corsi.html">
+  <link rel="alternate" hreflang="en" href="https://daniilangelobravi.com/en/corsi.html">
+  <link rel="alternate" hreflang="es" href="https://daniilangelobravi.com/es/corsi.html">
+  <link rel="alternate" hreflang="ru" href="https://daniilangelobravi.com/ru/corsi.html">
+  <link rel="alternate" hreflang="zh" href="https://daniilangelobravi.com/zh/corsi.html">
+  <link rel="alternate" hreflang="ja" href="https://daniilangelobravi.com/ja/corsi.html">
+  <link rel="canonical" href="https://daniilangelobravi.com/ru/corsi.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .corsi-wrap { min-height:100vh; padding:calc(var(--nav-h) + 60px) 40px 80px; max-width:960px; margin:0 auto; }
+    .corsi-intro { margin-bottom:64px; }
+    .corsi-intro h1 { font-size:clamp(22px,3vw,36px); font-weight:200; letter-spacing:0.1em; margin-bottom:20px; }
+    .corsi-intro p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; }
+    .corsi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; }
+    .corso-card { background:#0a0a0a; padding:32px 28px; display:flex; flex-direction:column; gap:16px; border:1px solid rgba(255,255,255,0.06); transition:border-color 0.3s; }
+    .corso-card:hover { border-color:rgba(255,255,255,0.2); }
+    .corso-tag { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-title { font-size:16px; font-weight:300; letter-spacing:0.05em; line-height:1.3; }
+    .corso-desc { font-size:12px; color:var(--text-dim); line-height:1.7; flex:1; }
+    .corso-meta { display:flex; flex-direction:column; gap:6px; }
+    .corso-duration { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); }
+    .corso-price { font-size:22px; font-weight:200; letter-spacing:0.05em; }
+    .corso-price span { font-size:11px; color:var(--text-dim); letter-spacing:0.1em; }
+    .btn-acquista { display:block; text-align:center; padding:13px 20px; border:1px solid rgba(255,255,255,0.3); color:var(--text); text-decoration:none; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; transition:border-color 0.2s,background 0.2s; margin-top:8px; }
+    .btn-acquista:hover { border-color:var(--text); background:rgba(255,255,255,0.05); }
+    .corsi-note { margin-top:60px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.08); font-size:11px; color:var(--text-dim); line-height:1.8; }
+    .corsi-section { margin-top:80px; }
+    .corsi-section-title { font-size:11px; font-weight:400; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px; }
+    .corsi-section > p { color:var(--text-dim); font-size:13px; line-height:1.8; max-width:560px; margin-bottom:32px; }
+    .corso-link { display:inline-block; margin-top:8px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:2px; text-decoration:none; transition:border-color 0.2s; }
+    .corso-link:hover { border-color:var(--text); }
+    .cv-columns { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .cv-columns h3 { font-size:10px; font-weight:400; letter-spacing:0.2em; text-transform:uppercase; color:var(--text); margin-bottom:20px; }
+    .cv-item { margin-bottom:22px; }
+    .cv-period { font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-dim); margin-bottom:4px; }
+    .cv-role { font-size:13px; font-weight:300; letter-spacing:0.03em; margin-bottom:4px; }
+    .cv-desc { font-size:12px; color:var(--text-dim); line-height:1.6; }
+    @media (max-width:768px) { .corsi-wrap { padding:calc(var(--nav-h) + 32px) 20px 60px; } .cv-columns { grid-template-columns:1fr; gap:32px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">Daniil Angelo Bravi</a>
+  <button class="hamburger" aria-label="Меню"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="pittura.html">Живопись</a></li>
+    <li><a href="disegno.html">Рисунок</a></li>
+    <li><a href="3d.html">3D</a></li>
+    <li><a href="corsi.html">Курсы</a></li>
+    <li><a href="contact.html">Контакт</a></li>
+    <li class="nav-lang"><span class="lang-cur">RU</span><div class="lang-drop"><a href="../corsi.html">IT</a><a href="../en/corsi.html">EN</a><a href="../es/corsi.html">ES</a><a href="../zh/corsi.html">ZH</a><a href="../ja/corsi.html">JA</a></div></li>
+  </ul>
+</nav>
+<div class="corsi-wrap">
+  <div class="corsi-intro">
+    <h1>Курсы</h1>
+    <p>Частные записанные видеоуроки от Daniil Angelo Bravi — технического CAD-дизайнера с более чем 8 годами профессионального опыта в индустрии обуви и аксессуаров: от 3D-моделирования в Rhinoceros до проектирования и изготовления форм и контроля качества. Окончил факультет промышленного и экологического дизайна Университета Камерино. После покупки вы сразу получаете ссылку для доступа к курсу.</p>
+    <p style="margin-top:16px;font-size:11px;letter-spacing:0.05em;color:var(--text-dim)">Основное ПО: Rhinoceros 8 — ZBrush и Blender включены при необходимости</p>
+  </div>
+
+  <div class="corsi-section" style="margin-top:0">
+    <p class="corsi-section-title">Очные занятия</p>
+    <p>Для тех, кто предпочитает учиться лично: индивидуальные очные уроки в провинции Фермо, Италия, и окрестностях. Дни, время и программа согласовываются напрямую через <a href="contact.html" style="color:inherit">контакт</a>.</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Очно — Фермо, Италия и окрестности</p>
+        <h2 class="corso-title">Базовый курс</h2>
+        <p class="corso-desc">Индивидуальный урок для начинающих: интерфейс, основные команды, моделирование твёрдых тел и поверхностей NURBS.</p>
+        <a class="corso-link" href="contact.html">Запросить информацию</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Очно — Фермо, Италия и окрестности</p>
+        <h2 class="corso-title">Продвинутый курс</h2>
+        <p class="corso-desc">Индивидуальный урок для тех, кто уже знает основы Rhino: продвинутое моделирование, сложные поверхности, профессиональные рабочие процессы.</p>
+        <a class="corso-link" href="contact.html">Запросить информацию</a>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Очно — по запросу</p>
+        <h2 class="corso-title">Курс по обуви</h2>
+        <p class="corso-desc">Индивидуальный урок по женской обуви (каблуки, платформы, танкетки, подошвы и аксессуары), программа согласуется по вашим потребностям.</p>
+        <a class="corso-link" href="contact.html">Запросить информацию</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">Видеокурсы</p>
+    <div class="corsi-grid">
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Rhinoceros для начинающих</h2>
+        <p class="corso-desc">Начинаем с нуля: интерфейс, основные команды, моделирование твёрдых тел и поверхностей NURBS. Подходит тем, кто никогда не работал с Rhino.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Средний/Продвинутый уровень</h2>
+        <p class="corso-desc">Техники NURBS выше базового уровня: сложные поверхности, продвинутое редактирование, профессиональные рабочие процессы для реальных проектов.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8</p>
+        <h2 class="corso-title">Продвинутые поверхности</h2>
+        <p class="corso-desc">Продвинутое управление поверхностями NURBS, непрерывность G0/G1/G2, техники для сложных органических и промышленных форм.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Обувь</p>
+        <h2 class="corso-title">Каблуки</h2>
+        <p class="corso-desc">Моделирование каблуков для женской обуви: пропорции, построение формы, отраслевые техники.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Обувь</p>
+        <h2 class="corso-title">Платформы</h2>
+        <p class="corso-desc">Моделирование платформ для женской обуви: объёмное построение, соединение с верхом и подошвой, отраслевые техники.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Обувь</p>
+        <h2 class="corso-title">Танкетки</h2>
+        <p class="corso-desc">Моделирование танкеток для женской обуви: построение формы, работа с кривыми поверхностями, отраслевые техники.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+      <div class="corso-card">
+        <p class="corso-tag">Rhinoceros 8 — Обувь</p>
+        <h2 class="corso-title">Подошвы и аксессуары</h2>
+        <p class="corso-desc">Моделирование подошв и аксессуаров для женской обуви: протектор, функциональные и декоративные детали, отраслевые техники.</p>
+        <div class="corso-meta">
+          <p class="corso-duration">Скоро</p>
+          <p class="corso-price">— <span>в разработке</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="corsi-note">После покупки вы получите по электронной почте прямую ссылку на курс на YouTube (частное видео, доступное только по вашей личной ссылке). По вопросам: <a href="contact.html" style="color:inherit">свяжитесь со мной</a>.</p>
+  </div>
+
+  <div class="corsi-section">
+    <p class="corsi-section-title">Резюме</p>
+    <div class="cv-columns">
+      <div>
+        <h3>Опыт</h3>
+        <div class="cv-item">
+          <p class="cv-period">2007 — По сей день</p>
+          <p class="cv-role">Живописная практика</p>
+          <p class="cv-desc">Живопись с 15 лет (год рождения 1992): 19 лет непрерывной практики масляной живописи — самообразование и академическая художественная подготовка.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Окт 2021 — По сей день</p>
+          <p class="cv-role">Технический дизайнер и контроль качества — CMT Stampi srl</p>
+          <p class="cv-desc">Проектирование и изготовление форм, моделирование для обувной промышленности и производства аксессуаров.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Июл 2017 — Сен 2021</p>
+          <p class="cv-role">Специалист по 3D-дизайну и печати — GSB S.r.l.</p>
+          <p class="cv-desc">Дизайн и прототипирование обуви с Rhinoceros 3D и ZBrush.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Июл 2017 — Дек 2017</p>
+          <p class="cv-role">Текстильный и промышленный дизайнер — Demanumea S.r.l.</p>
+          <p class="cv-desc">Создание художественных и графических работ для производимых изделий с Rhinoceros 3D и техническим черчением.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Апр 2018 — Июн 2018</p>
+          <p class="cv-role">Оператор раскроя CAD-CAM — 3AND Factory School</p>
+          <p class="cv-desc">Практика автоматизированного раскроя (240 ч), Blender и техническое черчение.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Образование</h3>
+        <div class="cv-item">
+          <p class="cv-period">2012 — 2017</p>
+          <p class="cv-role">Промышленный и экологический дизайн — Университет Камерино</p>
+          <p class="cv-desc">Школа архитектуры и дизайна, оценка 104/110.</p>
+        </div>
+        <div class="cv-item">
+          <p class="cv-period">Диплом</p>
+          <p class="cv-role">Магистр искусств в живописи — Istituto Statale d'Arte "Giulio Cantalamessa", Macerata</p>
+          <p class="cv-desc">Живописная декорация, оценка 100/100.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer-copy">&copy; Daniil Angelo Bravi 2025 &nbsp;&middot;&nbsp; <a href="cookie-policy.html" style="color:inherit;text-decoration:none">Политика Cookie</a> &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;text-decoration:none">Политика конфиденциальности</a> &nbsp;&middot;&nbsp; <a href="return-policy.html" style="color:inherit;text-decoration:none">Политика возврата</a></p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/brvdln/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@brvdln/" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://discourse.mcneel.com/u/brvdln/activity/portfolio" target="_blank" rel="noopener">McNeel Forum</a>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script data-goatcounter="https://rabbitbravi.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
